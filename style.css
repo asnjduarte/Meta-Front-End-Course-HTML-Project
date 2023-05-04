@@ -6,11 +6,11 @@ body {font-family:'Amatic SC', cursive, sans-serif; padding:.5rem;background-col
 section, .flx {display: flex;}
 main {border-top:ridge #26877f 1px}
 img {max-width: 100%;}
-section:nth-child(odd), section:nth-child(odd) a {margin:.5rem;color:#4c443c;animation: chngToGr 700ms linear;padding:.5rem;transition:500ms;border-radius:1rem;}
+section:nth-child(odd), section:nth-child(odd) a {margin:.5rem;color:#4c443c;padding:.5rem;transition:500ms;border-radius:1rem;}
 section:nth-child(odd):hover, section:nth-child(odd):hover a {padding:1rem;color: #26877f;}
-section:nth-child(even) article {margin:.5rem;transition:500ms;border-radius:5px;color: #faf3dd; background-color:#4c443c;}
+section:nth-child(even) article {margin:.5rem;transition:500ms;border-radius:5px;animation: 1s chngToBr forwards;}
 section:nth-child(even) article a {color: #faf3dd;}
-section:nth-child(even) article:hover {padding:1.5rem;color: #faf3dd; background-color:#26877f;}
+section:nth-child(even) article:hover {padding:1.5rem; animation: 1s chngToGr forwards;}
 section:nth-child(even) article:hover a {color: #faf3dd;}
 h1 {font-size:4rem;}
 h2 {font-size:3rem;padding:.5rem 0;}
@@ -24,7 +24,11 @@ footer .sm {font-size:.8rem;}
 .bgImg {width:100%;height:100%;position: absolute; z-index: -1; background-size:cover; top:0px; left:0px; border-radius:1rem; background-position: center; background-repeat: no-repeat;opacity:.2;}
 .tc,h2 {text-align: center;}
 .bx100 {height:100%; width:100%;}
-@keyframes chngToGr {
+@keyframes chngToBr {
     0%{background-color:#faf3dd;}
+    100% {background-color:#4c443c;}
+}
+@keyframes chngToGr {
+    0%{background-color:#4c443c;}
     100% {background-color:#26877f;}
 }
