@@ -25,7 +25,7 @@ footer .sm {font-size:.8rem;}
 .tc,h2 {text-align: center;}
 .bx100 {height:100%; width:100%;}
 @keyframes chngToBr {
-    0%{background-color:#faf3dd;}
+    0%{background-color:#26877f;}
     100% {background-color:#4c443c;}
 }
 @keyframes chngToGr {
